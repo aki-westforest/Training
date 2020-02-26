@@ -2,20 +2,14 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>{{ .Page.Title | markdownify }} - Mandalart}</title>
+    <title>Home - Mandalart</title>
 
-    <link rel="canonical" href="{{ .Permalink }}">
-
-    {{ with .Params.robots -}}
-    <meta name="robots" content="{{ . }}">
-    {{- end }}
-
-    {{ partial "stylesheet" . }}
-    {{ partial "favicons" . }}
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.min.css">
 
     <style>
       .bd-placeholder-img {
@@ -34,24 +28,55 @@
       }
     </style>
 
-    {{ range .Page.Params.extra_css }}
-    {{ "<!-- Custom styles for this template -->" | safeHTML }}
-    <link href="{{ . }}" rel="stylesheet">
-    {{- end }}
+    <!-- Custom styles for this template -->
+    <link href="bootstrap\site\content\docs\4.3\examples\starter-template\starter-template.css" rel="stylesheet">
   </head>
-  <body{{ with .Page.Params.body_class }} class="{{ . }}"{{ end }}>
-    {{ .Content }}
+  <body class="bg-dark text-light">
+    <div class="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mandalart</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-    {{ if ne .Page.Params.include_js false -}}
-      {{- if eq hugo.Environment "production" -}}
-        <script src="/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.min.js" integrity="{{ .Site.Params.cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
-      {{- else -}}
-        <script src="/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.js"></script>
-      {{- end }}
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
 
-      {{ range .Page.Params.extra_js -}}
-        <script{{ with .async }} async{{ end }} src="{{ .src }}"{{ with .integrity }} integrity="{{ . }}" crossorigin="anonymous"{{ end }}></script>
-      {{- end -}}
-    {{- end }}
+        <h1 class="display-1 text-center ">Mandalart</h1>
+
+      </header>
+      <main>
+
+      </main>
+      <footer></footer>
+    </div>
+
   </body>
 </html>
