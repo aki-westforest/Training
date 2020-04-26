@@ -1,19 +1,30 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: #c1a57b;
-  color: #ff9c91;
-}
-.header{
-  background-color: #30475e;
-  height: 90px;
+li {
+  list-style: none;
+  float: left;
 }
 
-.f-container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.header {
+  background-color: #fcf8e8;
+  height: 56px;
+}
+
+.header-logo {
+  background-color: inherit;
+  padding: 20px;
+  float: left;
+}
+
+.header-list {
+  background-color: inherit;
+  padding;
+  float: left;
+}
+
+.main {
+  
 }
