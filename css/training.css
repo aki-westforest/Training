@@ -3,28 +3,8 @@
   padding: 0;
 }
 
-li {
-  list-style: none;
-  float: left;
-}
-
-.header {
-  background-color: #fcf8e8;
-  height: 56px;
-}
-
-.header-logo {
-  background-color: inherit;
-  padding: 20px;
-  float: left;
-}
-
-.header-list {
-  background-color: inherit;
-  padding;
-  float: left;
-}
-
-.main {
-  
+#container {
+  display: grid;  /* グリッドレイアウト */
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
 }
