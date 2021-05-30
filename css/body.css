@@ -1,0 +1,14 @@
+/*
+
+  body.css - 共通スタイル
+  全てのページで共通するスタイルを設定
+  （例えば、ページの背景色やマージン、ヘッダやフッタのデザインなど）
+
+*/
+
+*{background-color: #a8d8ea;}
+
+h1{
+  color: #f6f6f6;
+  text-align: center;
+}

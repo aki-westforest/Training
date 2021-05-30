@@ -1,0 +1,22 @@
+/*
+  mandalart.css
+  マンダラート用スタイル
+  マンダラート表示に関連するスタイルを設定
+*/
+
+/*  課題点
+  * rect を 3 × 3 で整列して表示する  　
+  * 余白のバランスを調整する
+*/
+
+
+/* 縦横比一定の正方形 */
+.rect-wrap {
+  width: 100% ;
+}
+.rect {
+  width: 26% ;
+  padding-top: 26% ;
+  background-color: #f0f5f9 ;
+  text-align: center ;
+}
