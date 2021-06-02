@@ -2,24 +2,81 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/body.css">
-    <link rel="stylesheet" href="./css/mandalart.css">
+    <link href="./css/style.css" rel="stylesheet" media="all"/>
+    <link href="./css/fonts.googleapis.com/css?family=Rubik:400" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/body.css"> -->
+    <!-- <link rel="stylesheet" href="./css/mandalart.css"> -->
     <title>mandalart</title>
   </head>
   <body>
-    <h1>マンダラート</h1>
-    <div class="rect-wrap">
-      <div class="rect"></div>
-    </div>
-    <div class="rect-wrap">
-      <div class="rect">
-
+    <div id="header" class="soft_shadow">
+      <div class="wrap">
+        <div id="menu">
+          <span class="icon">•••</span>
+            <div id="main_menu" class="shadow block dropdown">
+              <a data-button="palettes" class="button selected" href="/palettes">Palettes</a>
+              <a data-button="create" class="button" href="/create">Create</a>
+              <a data-button="likes" class="button" href="/likes">Likes</a>
+              <div class="seperator"></div>
+              <a data-button="about" class="button" href="/about">About</a>
+              <a data-button="instagram" rel="noreferrer" target="_blank" class="button" onclick="ga('send', 'event','instagram_menu_button', 'click');" href="https://instagram.com/color.hunt">Instagram</a>
+            </div>
+        </div>
       </div>
+    </div>
+    <div id="container" class="wrap">
+      <h1 style="text-align: center; font-size:40px;">
+        マンダラート
+      </h1>
 
+      <div id="feed">
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+        <div class="item block shadow">
+          <div class="palette"></div>
+        </div>
+      </div>
     </div>
 
+    <!--
+    <h1>マンダラート</h1>
+    <div id="container" class="wrap">
+
+      <div id="feed">
+        <div class="rect-wrap">
+          <div class="rect"></div>
+        </div>
+        <div class="rect-wrap">
+          <div class="rect">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+   -->
 
 
   </body>
