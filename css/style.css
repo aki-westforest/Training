@@ -270,6 +270,12 @@ a:hover {
     direction:ltr
 }
 
+/* .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 16px;
+} */
+
 .item {
     width: 260px;
     margin: 8px;
@@ -1053,3 +1059,12 @@ a:hover {
         max-height: 228px
     }
 }
+
+/* gridの解決策追加 */
+/* @media screen and (min-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 16px;
+    }
+} */
